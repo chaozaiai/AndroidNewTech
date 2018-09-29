@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red_tab_message">#ffff5400</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="tab_text_select">#4CAF50</color>
+    <color name="tab_text_unselect">#9A9A9A</color>
+
+    <color name="green">#4CAF50</color>
+    <color name="blue">#347ce9</color>
+    <color name="grey">#9A9A9A</color>
+
+    <color name="tab_def_title_color_selector">#000000</color>
+</resources>

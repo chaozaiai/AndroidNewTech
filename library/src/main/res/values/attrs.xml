@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StatusView">
+        <attr name="fitsView" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="RatingBarAttributes">
+        <attr name="numStars" format="integer" />
+        <attr name="rating" format="float" />
+        <attr name="starPadding" format="dimension" />
+        <attr name="marginRight" format="dimension" />
+        <attr name="drawableEmpty" format="reference" />
+        <attr name="drawableFilled" format="reference" />
+        <attr name="touchable" format="boolean" />
+        <attr name="clearRatingEnabled" format="boolean" />
+        <attr name="starWidth" format="dimension" />
+        <attr name="starHeight" format="dimension" />
+        <attr name="stepSize" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="RefreshRefreshLayout">
+        <attr name="tr_max_head_height" format="dimension" />
+        <attr name="tr_head_height" format="dimension" />
+        <attr name="tr_max_bottom_height" format="dimension" />
+        <attr name="tr_bottom_height" format="dimension" />
+        <attr name="tr_overscroll_height" format="dimension" />
+        <attr name="tr_enable_refresh" format="boolean" />
+        <attr name="tr_enable_loadmore" format="boolean" />
+        <attr name="tr_pureScrollMode_on" format="boolean" />
+        <attr name="tr_overscroll_top_show" format="boolean" />
+        <attr name="tr_overscroll_bottom_show" format="boolean" />
+        <attr name="tr_enable_overscroll" format="boolean" />
+        <attr name="tr_headerView" format="dimension" />
+        <attr name="tr_bottomView" format="dimension" />
+        <attr name="tr_floatRefresh" format="boolean" />
+        <attr name="tr_autoLoadMore" format="boolean" />
+        <attr name="tr_enable_keepIView" format="boolean" />
+        <attr name="tr_showRefreshingWhenOverScroll" format="boolean" />
+        <attr name="tr_showLoadingWhenOverScroll" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="tab_button">
+        <attr name="tabtext" format="reference|string"></attr>
+        <attr name="txtSize" format="reference|dimension" />
+        <attr name="drawableTop" format="reference"></attr>
+        <attr name="drawableTopAttr" format="string"></attr>
+        <attr name="drawableBottom" format="reference"></attr>
+    </declare-styleable>
+
+
+</resources>

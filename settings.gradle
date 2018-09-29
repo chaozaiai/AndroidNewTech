@@ -1,0 +1,1 @@
+include ':app',':data',':library',':agentweb-core', ':agentweb-download', ':agentweb-filechooser', ':sharelibrary'

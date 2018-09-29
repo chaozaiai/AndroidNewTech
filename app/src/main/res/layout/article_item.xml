@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        tools:text="标题" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/iv_thumbnail"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:scaleType="fitXY"
+            tools:src="@mipmap/default01" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/iv_thumbnail">
+
+            <TextView
+                android:id="@+id/tv_des"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:layout_alignParentTop="true"
+                android:maxLines="3"
+                android:ellipsize="end"
+                tools:text="当我们的参考文献编号发生变化时，比如之前第一篇参考文献变成了第三篇，我们只需要选择文中之前插入的引用，点击右键，选择更新域，引用就会自动更新啦！" />
+
+            <TextView
+                android:id="@+id/tv_tag"
+                android:layout_width="wrap_content"
+                android:paddingLeft="5dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                tools:text="热点讨论" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tv_tag"
+                android:paddingLeft="10dp"
+                android:layout_alignParentBottom="true"
+                tools:text="2018-09-09" />
+
+            <Button
+                android:id="@+id/bt_mingpian"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/tv_time"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_alignParentBottom="true"
+                tools:text="插入名片" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.com.amway.content.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/et_yunzhidao_tag"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="tags" />
+
+            <Button
+                android:id="@+id/bt_yunzhidao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="云知道" />
+
+            <Button
+                android:id="@+id/bt_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="搜索" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/et_yunxuetang_tag"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="tags" />
+
+            <Button
+                android:id="@+id/bt_yunxuetang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="云学堂" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/et_boku_tag"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="tags" />
+
+            <Button
+                android:id="@+id/bt_boku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="播库" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/bt_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="product" />
+
+            <Button
+                android:id="@+id/bt_h5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="H5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/bt_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下载app" />
+
+            <Button
+                android:id="@+id/bt_downloadcancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消下载app" />
+
+            <Button
+                android:id="@+id/bt_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通知" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

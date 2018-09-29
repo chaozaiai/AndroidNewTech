@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_url"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="网址" />
+
+        <EditText
+            android:id="@+id/et_userinfo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/et_url"
+            android:hint="用户信息参数 json" />
+
+
+        <Button
+            android:id="@+id/bt_jump"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="跳转网页" />
+
+        <Button
+            android:id="@+id/bt_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信分享"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

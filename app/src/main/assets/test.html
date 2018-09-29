@@ -1,0 +1,55 @@
+<html>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script type="text/javascript">
+		var pay = {
+			invoke: function(cmd, params, success, fail) {
+				if (!cmd) return false;
+				var self = this,
+				callbackName = 'callApp' + new Date().valueOf();
+				self[callbackName] = function(data) {
+					if (data) {
+						if (typeof success == 'function') success(data);
+					} else {
+						if (typeof fail == 'function') fail(data);
+					}
+					delete self[callbackName];
+				};
+				var p = params;
+				if (Object.prototype.toString.call(params) == "[object Object]") {
+					p = JSON.stringify(params);
+				}
+				var obj = JSON.parse(p);
+				var url = 'MetroAPP_Pay://' + cmd + "||" + obj.partnerid + "/" + obj.prepayid + "/" + obj.noncestr + "/" + obj.timestamp + "/" + obj.sign;
+				var _iframe = document.createElement("iframe");
+				_iframe.style.display = 'none';
+				_iframe.id = "forApp" + callbackName;
+				_iframe.src = url;
+				console.log(_iframe);
+				document.documentElement.appendChild(_iframe);
+				setTimeout(function() {
+					document.querySelector("#forApp" + callbackName).remove();
+				},300);
+			}
+		};
+		function callpay() {
+			pay.invoke("wechatpay", {
+				"partnerid": "10019466",
+				"prepayid": "wx06141142389769dee1e753340065585780",
+				"noncestr": "d307edf107c43e4986707deb2d541eaa",
+				"timestamp": "1533535902",
+				"sign": "AA535D06AB11917216B8BA3251D79571",
+			},
+			function(data) {
+				alert(data);
+			},
+			function(data) {
+				alert("error");
+				alert(data);
+			});
+		}
+	</script>
+	</head>
+	<body onload='javascript:callpay()'>
+	</body>
+
+</html>
